@@ -4,6 +4,8 @@ import logo from './moralisLogo.svg';
 import { Select } from 'antd';
 import { Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
+import CreateAccount from './components/CreateAccount';
+import RecoverAccount from './components/RecoverAccount';
 function App() {
   const [selectedChain, setSelectedChain] = useState('0x1');
 
@@ -41,6 +43,8 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/yourwallet' element={<CreateAccount />} />
+        <Route path='/recover' element={<RecoverAccount />} />
       </Routes>
     </div>
   );

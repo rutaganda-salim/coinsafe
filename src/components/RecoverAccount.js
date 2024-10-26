@@ -6,6 +6,7 @@ function RecoverAccount() {
   return (
     <>
       <div className="content">
+        Recover Account
       </div>
     </>
   );
